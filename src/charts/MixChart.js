@@ -1,33 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Mix } from "@ant-design/plots";
 
+// Show multiple charts together. https://charts.ant.design/en/examples/plugin/multi-view/#combo-plot
+// Problem: Cannot display legend and filter the data by legend.
 const DemoMix = () => {
-  const averageData = [
-    {
-      date: "2015-02",
-      value: 21168,
-    },
-    {
-      date: "2015-08",
-      value: 21781,
-    },
-    {
-      date: "2016-01",
-      value: 23818,
-    },
-    {
-      date: "2017-02",
-      value: 25316,
-    },
-    {
-      date: "2018-01",
-      value: 26698,
-    },
-    {
-      date: "2018-08",
-      value: 27890,
-    },
-  ];
   const config = {
     appendPadding: 8,
     tooltip: {

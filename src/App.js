@@ -2,6 +2,11 @@ import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import { DualAxes } from "@ant-design/plots";
 
+// Show detailed data via Column chart and total number via Line chart.
+// Features:
+//    #1 Share same legend and filter data by legend
+//    #2 When remove/add detailed data via legend, the total line chart will be updated as well.
+//    #3 Click `2M` or `All` to re-render the chart using new data.
 const data = [
   {
     time: "2019-03",
